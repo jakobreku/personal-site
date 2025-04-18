@@ -1,0 +1,162 @@
+/* style.css */
+
+/* Grundfarben */
+:root {
+  --bg-dark: #121212;
+  --bg-darker: #1e1e1e;
+  --text-light: #f0f0f0;
+  --accent: #d4af37; /* eleganter Goldton */
+  --accent-hover: #f5c542;
+  --card-bg: #1a1a1a;
+  --border-color: #2a2a2a;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-light);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navbar {
+  background-color: var(--bg-darker) !important;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: var(--text-light) !important;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--accent);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+#hero-section {
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+  padding: 5rem 2rem;
+}
+
+#hero-section img {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+#hero-section h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+#hero-section p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.feature {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  background-color: #222222;
+}
+
+.feature h3 {
+  color: var(--accent);
+  margin-top: 1rem;
+}
+
+/* Weiß gefärbte Icons */
+.feature img {
+  filter: brightness(0) invert(1);
+}
+
+a,
+.btn {
+  color: var(--accent);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.btn-outline-light {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 30px;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--accent-hover);
+  color: #000;
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+section .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#resume h2,
+#future-plans h2,
+#contact-me h2 {
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+.resume-entry,
+.plan-entry {
+  background-color: var(--card-bg);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: var(--bg-darker);
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-light);
+  border-top: 1px solid var(--border-color);
+}
+
+footer .social-icons a {
+  color: var(--text-light);
+  font-size: 1.25rem;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: var(--accent);
+}

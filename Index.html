@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jakob's Personal Site</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Google Font: Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS Animate On Scroll CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">reku.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample01"
+          aria-controls="navbarsExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+          <ul class="navbar-nav me-auto mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero-section">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#future-plans">Future</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-me">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="text-center hero-section">
+      <img
+        class="d-block mx-auto mb-4 rounded-circle"
+        src="./images/pb.jpg"
+        alt="Jakob"
+        height="225"
+        data-aos="zoom-in"
+      />
+      <h1 class="display-4 fw-bold" data-aos="fade-up" data-aos-delay="100">
+        Hey, I'm Jakob
+      </h1>
+      <p class="lead" data-aos="fade-up" data-aos-delay="200">
+        Upcoming Full Stack Developer & Ultra Runner
+      </p>
+    </section>
+
+    <!-- About Me -->
+    <section id="about-me" class="dark-section">
+      <div class="container py-5">
+        <h2 class="section-heading" data-aos="fade-right">About Me</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div
+            class="feature col text-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img src="./icons/growth.png" alt="working" height="50" />
+            <h3 class="fs-3 mt-3">Driven By Improvement</h3>
+            <p>
+              I enjoy improving – not out of perfectionism, but because I like
+              seeing what I’m capable of over time.
+            </p>
+          </div>
+          <div
+            class="feature col text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img src="./icons/speed.png" alt="running" height="50" />
+            <h3 class="fs-3 mt-3">Running Helps Me Grow</h3>
+            <p>
+              For me, running is more than just exercise – it’s a way to build
+              consistency, patience, and mental strength.
+            </p>
+          </div>
+          <div
+            class="feature col text-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img src="./icons/student.png" alt="learning" height="50" />
+            <h3 class="fs-3 mt-3">Learning Step By Step</h3>
+            <p>
+              I’m rarely great at something right away, but I stay curious, put
+              in the work, and keep showing up.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="dark-section">
+      <div class="container py-5">
+        <h2 class="section-heading" data-aos="fade-right">Resume</h2>
+        <div class="resume-entry" data-aos="fade-up" data-aos-delay="100">
+          <h4>2021 - 2024: Online Marketing & Brand Building</h4>
+          <ul>
+            <li>
+              Gained experience in SEO, content marketing, and social media
+              management.
+            </li>
+            <li>
+              Started building my own brand and learned digital growth
+              strategies.
+            </li>
+          </ul>
+        </div>
+        <div class="resume-entry" data-aos="fade-up" data-aos-delay="200">
+          <h4>2024 - Present: Transition to Full Stack Development</h4>
+          <ul>
+            <li>
+              Began learning to code and transitioned into full-stack
+              development.
+            </li>
+            <li>
+              Started creating projects that combine development and marketing.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future Plans -->
+    <section id="future-plans" class="dark-section">
+      <div class="container py-5">
+        <h2 class="section-heading" data-aos="fade-right">Future Plans</h2>
+        <ul data-aos="fade-up" data-aos-delay="100">
+          <li>
+            Keep improving as a full-stack developer and contribute to impactful
+            projects.
+          </li>
+          <li>
+            Integrate my marketing knowledge into tech product design and user
+            experience.
+          </li>
+          <li>
+            Eventually build a business around helping other brands grow through
+            tech & marketing.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact-me" class="dark-section">
+      <div class="container py-5 text-center">
+        <h2 class="section-heading" data-aos="fade-right">Contact Me</h2>
+        <p data-aos="fade-up" data-aos-delay="100">
+          I'm always happy to connect with like-minded people. Let’s chat!
+        </p>
+        <a
+          href="mailto:jakob@example.com"
+          class="btn btn-outline-light mt-3"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Email Me
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 reku.</p>
+      <div class="social-icons mt-2">
+        <a href="https://instagram.com/jakobreku" target="_blank" class="me-3"
+          ><i class="bi bi-instagram"></i
+        ></a>
+        <a href="https://twitter.com/jakobreku" target="_blank"
+          ><i class="bi bi-twitter"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS & dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animate On Scroll JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
